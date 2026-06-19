@@ -1,5 +1,7 @@
 # Public Speaking Simulator
 
+**[🔴 Live Demo: Orato-Bot](https://orato-bot.onrender.com/)**
+
 A comprehensive web application that helps users practice and improve their public speaking skills through real-time AI-powered analysis of facial expressions, voice patterns, and speech sentiment.
 
 ## 🎯 Features
@@ -43,7 +45,6 @@ A comprehensive web application that helps users practice and improve their publ
 3. **Environment variables**
    Create a `.env` file at the project root with:
    ```
-   GROQ_API_KEY=YOUR_GROQ_KEY
    PORT=5050
    ```
 
@@ -53,7 +54,7 @@ A comprehensive web application that helps users practice and improve their publ
    npm start        # frontend on http://localhost:3000
    ```
 
-4. **Open your browser**
+5. **Open your browser**
    Navigate to `http://localhost:3000`
 
 ## 🛠️ Technical Stack
@@ -114,7 +115,7 @@ src/
 
 ### 4. AI Mock Interview Flow
 - Provide resume/skills in the Mock Interview screen
-- Backend calls Groq to generate questions tailored to profile
+- Backend generates AI questions tailored to profile
 - Answer each question; system blends AI evaluation with optional voice/facial heuristics
 - End-of-session summary: Technical, Communication, Confidence + detailed feedback and tips
 
@@ -130,19 +131,19 @@ The core component that handles:
  - Optional body language heuristics (posture and gesture balance) without additional models
 
 ### Dashboard Component
-### MockInterview Component
-Handles:
-- Profile input and Groq question generation
-- Text answers (optional camera/mic enable)
-- Evaluation: technical accuracy, clarity, confidence
-- Summary report and retry option
-
 Provides:
 - Welcome interface
 - Session results display
 - Feature overview
 - Performance metrics
  - Optional body language tiles (posture score, gesture balance) when enabled
+
+### MockInterview Component
+Handles:
+- Profile input and AI question generation
+- Text answers (optional camera/mic enable)
+- Evaluation: technical accuracy, clarity, confidence
+- Summary report and retry option
 
 ### Sentiment Analyzer
 Custom utility that:
@@ -233,3 +234,9 @@ For support, questions, or feedback:
 ---
 
 **Happy Speaking! 🎤** 
+
+---
+
+## ✍️ Author
+
+Sanya Chadha
